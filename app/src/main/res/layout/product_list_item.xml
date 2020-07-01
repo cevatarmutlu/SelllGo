@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/product_list_item_layout">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_list_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/list_product_img"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="@string/product_info" />
+
+            <TextView
+                android:id="@+id/info_product_name"
+                android:text="Ürün"
+                android:textSize="@dimen/my_text_size"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/list_product_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/list_product_name"
+                android:text="@string/product_name"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_text_size"
+                app:layout_constraintStart_toEndOf="@id/info_product_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/info_product_price"
+                android:text="Fiyat"
+                android:textSize="@dimen/my_text_size"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/list_product_img"
+                app:layout_constraintTop_toBottomOf="@id/info_product_name" />
+
+
+            <TextView
+                android:id="@+id/list_product_price"
+                android:text="@string/product_price"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/my_text_size"
+                app:layout_constraintStart_toEndOf="@id/info_product_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/list_product_name"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/info_product_info"
+                android:text="Açıklama"
+                android:textSize="@dimen/my_text_size"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/list_product_img"
+                app:layout_constraintTop_toBottomOf="@id/info_product_price" />
+
+            <TextView
+                android:id="@+id/list_product_info"
+                android:text="@string/product_info"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/my_text_size"
+                app:layout_constraintStart_toEndOf="@id/info_product_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/list_product_price"
+                android:layout_marginBottom="5dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

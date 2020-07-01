@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="entry_sing_in">Giriş Yap</string>
+    <string name="entry_sing_up">Kayıt Ol</string>
+    <string name="sing_up_name">İsim</string>
+    <string name="sing_up_surname">Soyisim</string>
+    <string name="sing_up_mail">E-Mail</string>
+    <string name="sing_up_password">Şifre</string>
+    <string name="sing_up_company_name">Şirket İsmi</string>
+    <string name="sing_up_buton">Kayıt Ol</string>
+    <string name="sing_in_button">Giriş Yap</string>
+    <string name="main_add_product">Ürün Ekle</string>
+    <string name="product_name">Ürün Adı</string>
+    <string name="product_price">Ürün Fiyatı</string>
+    <string name="product_info">Ürün Açıklaması</string>
+    <string name="add_product_button">Ürün Ekle</string>
+    <string name="add_product_img_button">Resim Ekle</string>
+    <string name="sing_out_button">Çıkış Yap</string>
+    <string name="loading_screen_message">Lütfen bekleyiniz</string>
+    <string name="ic_tb_add_product">Ürün Ekle</string>
+    <string name="ic_tb_account">Hesab</string>
+</resources>
